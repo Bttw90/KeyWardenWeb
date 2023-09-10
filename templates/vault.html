@@ -1,4 +1,18 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Vault</h1>
+    <div class="container-form">
+        <form method="POST" action="">
+            <div class="form-group">
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    {{ form.select_key() }}
+                    <input type="submit" value="Show value">
+                </form>
+                {% if selected_value %}
+                    <h2>Result</h2>
+                    <p>Selected Password: {{ selected_value }}</p>
+                {% endif %}     
+            </div>
+        </form>
+    </div>
 {% endblock content %}
