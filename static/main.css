@@ -1,0 +1,13 @@
+.form-group {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Viewport height */
+}
