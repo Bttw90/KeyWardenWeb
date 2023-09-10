@@ -33,7 +33,7 @@ def register():
 
 # Temp class
 class SelectKeyForm(FlaskForm):
-    select_key = SelectField('Seleziona una chiave', choices=[key for key in data_dict.keys()])
+    select_key = SelectField('Select a key', choices=[key for key in data_dict.keys()])
 
 @app.route('/vault', methods = ['GET', 'POST'])
 def vault():
